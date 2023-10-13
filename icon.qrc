@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>pic/wallhaven-rd9q77.jpg</file>
+    <file>pic/down.png</file>
+    <file>pic/g1.png</file>
+    <file>pic/pai.png</file>
+    <file>pic/Hint.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1199</width>
+    <height>721</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图像采集</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton
+{
+background-color: rgb(225, 225, 225);
+border:2px groove gray;
+border-radius:10px;
+padding:2px 4px;
+border-style: outset;
+}
+QPushButton:hover
+{
+background-color:rgb(229, 241, 251);
+color: black;
+}
+QPushButton:pressed
+{
+background-color:rgb(0, 0, 0);
+border-style: inset;
+}
+QMenu{
+   background:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #00ffff, stop:0.5 #505050, stop:0.98 #00ffff);
+   border:0px;
+   border-radius:4px;
+   color:white;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>555</y>
+      <width>1141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>拍照</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/jsjt0/.designer/backup/pic/pai.png</normaloff>C:/Users/jsjt0/.designer/backup/pic/pai.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>重置</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/jsjt0/.designer/backup/pic/down.png</normaloff>C:/Users/jsjt0/.designer/backup/pic/down.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>关闭</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/jsjt0/.designer/backup/pic/Hint.png</normaloff>C:/Users/jsjt0/.designer/backup/pic/Hint.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>材积计算</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/jsjt0/.designer/backup/pic/g1.png</normaloff>C:/Users/jsjt0/.designer/backup/pic/g1.png</iconset>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>40</y>
+      <width>1091</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/newPrefix/pic/g1.png);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>500</width>
+         <height>500</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">border-image: url(:/newPrefix/pic/wallhaven-rd9q77.jpg);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>630</y>
+      <width>241</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Agency FB</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>请输入检尺长度：</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>630</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>检尺长</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="cameraButton">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>620</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>returnButton</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1199</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+   background:qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 #00ffff, stop:0.5 #505050, stop:0.98 #00ffff);
+   border:0px;
+   border-radius:4px;
+   color:white;
+}</string>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string>参数调整</string>
+    </property>
+    <addaction name="action_19"/>
+    <addaction name="action_20"/>
+    <addaction name="action_21"/>
+    <addaction name="action_22"/>
+    <addaction name="action_23"/>
+    <addaction name="action_24"/>
+    <addaction name="action_25"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <action name="actionliangdu">
+   <property name="text">
+    <string>liangdu</string>
+   </property>
+  </action>
+  <action name="action_10">
+   <property name="text">
+    <string>亮度</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>对比度</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>色调</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>饱和度</string>
+   </property>
+  </action>
+  <action name="action_6">
+   <property name="text">
+    <string>锐度</string>
+   </property>
+  </action>
+  <action name="action_7">
+   <property name="text">
+    <string>曝光时间</string>
+   </property>
+  </action>
+  <action name="action_8">
+   <property name="text">
+    <string>白平衡和温度</string>
+   </property>
+  </action>
+  <action name="action_11">
+   <property name="text">
+    <string>亮度</string>
+   </property>
+  </action>
+  <action name="action_19">
+   <property name="text">
+    <string>亮度</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_20">
+   <property name="text">
+    <string>对比度</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_21">
+   <property name="text">
+    <string>色调</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_22">
+   <property name="text">
+    <string>饱和度</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_23">
+   <property name="text">
+    <string>锐度</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_24">
+   <property name="text">
+    <string>曝光时间</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+  <action name="action_25">
+   <property name="text">
+    <string>白平衡和温度</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Agency FB</family>
+     <pointsize>14</pointsize>
+    </font>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="picture.qrc"/>
+  <include location="icon.qrc"/>
+ </resources>
+ <connections/>
+</ui>
