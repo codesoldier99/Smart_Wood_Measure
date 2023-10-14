@@ -10,7 +10,7 @@ _*_ coding utf-8 _*_
 
 
 def Volume_Calculation(L, D):  # 材积计算公式
-    if L < 2:
+    if D <= 2:
         V = 0.8 * L * (D + 0.5 * L) ** 2 / 10000
     elif D < 14:
         V = 0.7854 * L * (D + 0.45 * L + 0.2) ** 2 / 10000
