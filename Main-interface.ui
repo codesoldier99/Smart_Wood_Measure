@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>775</width>
-    <height>379</height>
+    <width>917</width>
+    <height>645</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,21 +17,24 @@
    <bool>true</bool>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_3">
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_2">
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_13">
-        <property name="bottomMargin">
-         <number>1</number>
-        </property>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
          <widget class="QLineEdit" name="lineEdit">
           <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
             <verstretch>2</verstretch>
            </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>891</width>
+            <height>151</height>
+           </size>
           </property>
           <property name="font">
            <font>
@@ -55,10 +58,16 @@
            <enum>Qt::LeftToRight</enum>
           </property>
           <property name="autoFillBackground">
-           <bool>true</bool>
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(79， 79， 79， 100);</string>
           </property>
           <property name="text">
            <string>  原木智能检尺系统</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
           </property>
          </widget>
         </item>
@@ -67,13 +76,7 @@
       <item>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_11">
-          <property name="spacing">
-           <number>3</number>
-          </property>
-          <property name="bottomMargin">
-           <number>2</number>
-          </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
           <item>
            <widget class="QPushButton" name="pushButton">
             <property name="sizePolicy">
@@ -82,10 +85,16 @@
               <verstretch>1</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>211</width>
+              <height>101</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>黑体</family>
-              <pointsize>26</pointsize>
+              <pointsize>16</pointsize>
              </font>
             </property>
             <property name="cursor">
@@ -105,13 +114,7 @@
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_12">
-          <property name="spacing">
-           <number>3</number>
-          </property>
-          <property name="bottomMargin">
-           <number>2</number>
-          </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
           <item>
            <widget class="QPushButton" name="pushButton_2">
             <property name="sizePolicy">
@@ -120,17 +123,64 @@
               <verstretch>1</verstretch>
              </sizepolicy>
             </property>
+            <property name="minimumSize">
+             <size>
+              <width>211</width>
+              <height>101</height>
+             </size>
+            </property>
             <property name="font">
              <font>
               <family>黑体</family>
-              <pointsize>26</pointsize>
+              <pointsize>16</pointsize>
              </font>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
             <property name="text">
              <string>数据处理</string>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>1</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>211</width>
+              <height>101</height>
+             </size>
+            </property>
+            <property name="font">
+             <font>
+              <family>黑体</family>
+              <pointsize>16</pointsize>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true"/>
+            </property>
+            <property name="text">
+             <string>图片编辑</string>
             </property>
             <property name="autoDefault">
              <bool>false</bool>
@@ -146,6 +196,36 @@
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionereaser">
+   <property name="text">
+    <string>ereaser</string>
+   </property>
+  </action>
+  <action name="actionsize">
+   <property name="text">
+    <string>size</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionqingkong">
+   <property name="text">
+    <string>qingkong</string>
+   </property>
+  </action>
+  <action name="actionbanbenxinxi">
+   <property name="text">
+    <string>banbenxinxi </string>
+   </property>
+  </action>
+  <action name="actioncanshutiaozheng">
+   <property name="text">
+    <string>canshutiaozheng</string>
+   </property>
+  </action>
  </widget>
  <resources>
   <include location="../specializedweek/png.qrc"/>

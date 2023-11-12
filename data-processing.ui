@@ -74,12 +74,7 @@
         </item>
        </layout>
       </widget>
-      <widget class="Line" name="line">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-      </widget>
-      <widget class="QWidget" name="">
+      <widget class="QWidget" name="layoutWidget">
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
          <widget class="QLabel" name="label">
@@ -117,6 +112,12 @@
             <height>51</height>
            </size>
           </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>51</height>
+           </size>
+          </property>
           <property name="font">
            <font>
             <family>黑体</family>
@@ -135,6 +136,26 @@
    </layout>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionstart">
+   <property name="text">
+    <string>start</string>
+   </property>
+  </action>
+  <action name="actionsize">
+   <property name="text">
+    <string>size</string>
+   </property>
+  </action>
+  <action name="actioneraser">
+   <property name="text">
+    <string>eraser</string>
+   </property>
+  </action>
+  <action name="actionremoveall">
+   <property name="text">
+    <string>color</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
